@@ -9,131 +9,136 @@ class App extends Component {
     this.state = {
       resumeData: null
     };
-
-    this.SkillTemplate = this.SkillTemplate.bind(this);
-    this.SkillsTemplate = this.SkillsTemplate.bind(this);
   }
 
-  SkillTemplate = function (props) {
+  SkillsSection = ({ skills }) => {
+    if (!skills) return null;
     
-    return props.skills.map(skill => <li key={skill}>{skill}</li>);
+    const skillCategories = Object.keys(skills);
+    return (
+      <div className="skills-section">
+        {skillCategories.map(category => (
+          <div className="skill-category" key={category}>
+            <h5 className="skill-category-title">{category}</h5>
+            <ul className="skill-list">
+              {skills[category].map(skill => (
+                <li key={skill}>{skill}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    );
   };
 
-  SkillsTemplate = function (props) {
-    if (!props.skills) {
-      return null;
-    }
-    var skillKeys = Object.keys(props.skills);
-    var self = this;
-    var skillTemplate = skillKeys.map(skillKey => <div className="skills" key={skillKey + "Div"}><span className="skill" key={skillKey + "Span"}>{skillKey}</span>
-      <ul key={skillKey + "Ul"}>
-        <self.SkillTemplate key={skillKey + "Skill"} skills={props.skills[skillKey]} />
-      </ul></div>)
-    return <div className="allSkills">{skillTemplate}</div>;
+  EducationSection = ({ education }) => {
+    if (!education) return null;
 
+    return (
+      <div className="education-section">
+        {education.map((edu, idx) => (
+          <div key={idx} className="education-item">
+            <div className="edu-header">
+              <strong className="edu-name">{edu.name}</strong>
+              <span className="edu-dates">
+                {edu.location && <span className="edu-location">({edu.location})</span>}
+                {edu.start && <span>{edu.start} - </span>}
+                {edu.end}
+              </span>
+            </div>
+            <div className="edu-field">{edu.field}</div>
+          </div>
+        ))}
+      </div>
+    );
   };
+  ExperienceSection = ({ jobs }) => {
+    if (!jobs) return null;
 
-  EducationTemplate = function (props) {
-    if (!props.education) {
-      return null;
-    }
-
-    var educationTemplate = props.education
-      .map((edu, idx) => <div key={"edu" + idx} className={"summary education"}>
-        <span className="name">{edu.name}</span>
-        <span className="right">
-          <span className="location">{edu.location != null && <span>({edu.location})</span>}</span>
-          <span className="dates">[{edu.start != null && <span>{edu.start} -</span>}{edu.end}]</span>
-        </span>
-        <div className="title-terms">
-          <span className="field">{edu.field}</span>
-        </div>
-      </div>);
-
-    return <div className={"history allEducation"}>{educationTemplate}</div>;
-  };
-
-
-  JobsTemplate = function (props) {
-    if (!props.jobs) {
-      return null;
-    }
-
-    var lastBreak = -100;
-    var applyPageBreak = function (target) {
-      const pageThreshold = 815;
-
-      if (target.children.length > 0) {
-        for (let childIdx = 0; childIdx < target.children.length; childIdx++) {
-          const childElement = target.children[childIdx];
-
-          applyPageBreak(childElement);
-        }
+    const parseEndClients = (endClients) => {
+      if (endClients) {
+        return <div className="end-clients">End Clients: {endClients.join(', ')}</div>;
       }
-      else {
-        var workingTop = target.offsetTop;
-        target.setAttribute("telemetry", JSON.stringify({ workingTop }));
-        //target.innerHTML +=  JSON.stringify({ workingTop });
-        if (workingTop - lastBreak >= pageThreshold) {
-          lastBreak = workingTop;
-          
-          // target.classList.add('pg-break');
-        }
-      }
+      return null;
     };
 
-    var parseEndClients = function(endClients){
-      if(endClients){
-        return `<div class="end-clients">End Clients: ${endClients} </div>`;
-      }
-      return "";
-    };
+    const sortedJobs = [...jobs].sort((a, b) => 
+      Date.parse(a.start) < Date.parse(b.start) ? 1 : -1
+    );
 
-    var jobsTemplate = props.jobs
-      .sort((a, b) => Date.parse(a.start) < Date.parse(b.start) ? 1 : -1)
-      .map((job, idx) => <div id={"job" + idx} key={"job" + idx} className={"summary job"}>
-        <span className="name">{job.clientName}</span>
-        <span className="right">
-          {/* <span className="location"> {job.location} </span> */}
-          <span className="dates"> {format(Date.parse(job.start), "M/yyyy")} - {job.end != null ? format(Date.parse(job.end), "M/yyyy") : "present"} </span>
-        </span>
-        <div className="title-terms">
-          <span className="title">{job.title.trim()} - {job.terms}</span>
-        </div>
-        <div className="details"
-          ref={el => {
-            // el can be null - see https://reactjs.org/docs/refs-and-the-dom.html#caveats-with-callback-refs
-            if (!el) return;
+    return (
+      <div className="experience-section">
+        {sortedJobs.map((job, idx) => (
+          <div key={idx} className="job-item">
+            <div className="job-header">
+              <div className="job-main">
+                <strong className="company-name">{job.clientName}</strong>
+                <span className="job-title">{job.title} - {job.terms}</span>
+              </div>
+              <div className="job-meta">
+                <span className="job-dates">
+                  {format(Date.parse(job.start), "M/yyyy")} - {job.end ? format(Date.parse(job.end), "M/yyyy") : "present"}
+                </span>
+                <span className="job-location">{job.location}</span>
+              </div>
+            </div>
+            {parseEndClients(job.endClients)}
+            <div 
+              className="job-details"
+              dangerouslySetInnerHTML={{ __html: job.details.join("") }} 
+            />
+          </div>
+        ))}
+      </div>
+    );
+  };
 
-            applyPageBreak(el);
-          }}
-          dangerouslySetInnerHTML={{ __html: `${parseEndClients(job.endClients)}${job.details.join("")}` }} />
-
-      </div>)
-
-    return <div className={"history allJobs"}>{jobsTemplate}</div>;
-  }
-
-  GetResumeData = function () {
+  GetResumeData = () => {
     this.setState({ resumeData: require('./resume.json') });
   };
 
   render() {
+    const { resumeData } = this.state;
+
     return (
       <div className="App">
-
-        <header className="App-header">
-          <h1 style={{ marginBottom: 0 }}>Alex Jamrozek</h1>
-          <h3 style={{ margin: 0 }}>{this.state.resumeData?.title}</h3>
-          <p >{this.state.resumeData?.tagLine} </p>
-          <h4 className="h-section">Skills</h4>
-          <this.SkillsTemplate skills={this.state.resumeData?.skills} />
-          <h4 className="h-section">Education</h4>
-          <this.EducationTemplate education={this.state.resumeData?.education} />
+        <header className="resume-header">
+          <h1 className="name">{resumeData?.name || 'Alex Jamrozek'}</h1>
+          <h2 className="title">{resumeData?.title}</h2>
+          {resumeData?.summary && <p className="summary">{resumeData?.summary}</p>}
         </header>
-        <h4 className="h-section">Professional Experience</h4>
-        <this.JobsTemplate jobs={this.state.resumeData?.jobs} />
-      </div>);
+
+        <main className="resume-body">
+          <section className="section skills-section-wrapper">
+            <h3 className="section-title">Core Skills</h3>
+            <this.SkillsSection skills={resumeData?.skills} />
+          </section>
+
+          <section className="section">
+            <h3 className="section-title">Professional Experience</h3>
+            <this.ExperienceSection jobs={resumeData?.jobs} />
+          </section>
+
+          {resumeData?.certifications && (
+            <section className="section">
+              <h3 className="section-title">Certifications</h3>
+              <div className="certification-list">
+                {resumeData.certifications.map((cert, idx) => (
+                  <div key={idx} className="cert-item">
+                    <strong>{cert.name}</strong> • {cert.date}
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <section className="section">
+            <h3 className="section-title">Education</h3>
+            <this.EducationSection education={resumeData?.education} />
+          </section>
+        </main>
+      </div>
+    );
   }
 
   componentDidMount() {

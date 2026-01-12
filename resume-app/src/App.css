@@ -1,190 +1,357 @@
+/* Modern Resume Layout - Print-Optimized */
+* {
+  box-sizing: border-box;
+}
+
 .App {
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 0.5in;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.5;
+  background: white;
+}
+
+/* Header Section */
+.resume-header {
   text-align: center;
-  letter-spacing: .01em;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #2c3e50;
+  margin-bottom: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.resume-header .name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem 0;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
 }
 
-header h1{
-  letter-spacing: .01em;
-  background-color: #282c34;
-  width:100%;
-  
+.resume-header .title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 0.3rem 0;
+  color: #34495e;
 }
 
-.sticky{
-  position: sticky;
-  font-size: .8em;
-}
-
-.allSkills{
-  display: flex;
-  align-items: stretch;
-  width:80%;
-}
-
-.skills{
-  flex-grow:1;
+.resume-header .summary {
+  font-size: 0.88rem;
+  margin: 0.75rem 0 0 0;
+  color: #555;
+  line-height: 1.5;
   text-align: left;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
 }
-.skills ul{
-  margin:0;
-  padding-left:15px;
-}
-.skills li{
-  font-size: .7em;
+/* Main Body */
+.resume-body {
+  font-size: 0.95rem;
 }
 
-.skill{
+.section {
+  margin-bottom: 1.25rem;
+}
+
+.skills-section-wrapper {
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 0.6rem 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid #e0e0e0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Skills Section */
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.skill-category {
+  background: #f8f9fa;
+  padding: 0.6rem;
+  border-left: 3px solid #3498db;
+}
+
+.skill-category-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem 0;
+  color: #2c3e50;
   text-transform: capitalize;
-  font-weight: bold;
-  font-size: .8em;
 }
 
-.history{
-  margin-top: 10px;
-  font-size: .8em;
-  text-align: left;
+.skill-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  list-style-type: disc;
+}
+
+.skill-list li {
+  margin-bottom: 0.2rem;
+  font-size: 0.82rem;
+  color: #444;
+}
+/* Certifications Section */
+.certification-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+
+/* Education Section */
+
+.cert-item {
+  padding: 0.75rem;
+  background: #e8f5e9;
+  border-left: 3px solid #27ae60;
+  font-size: 0.9rem;
+  color: #2c3e50;
+}
+
+.cert-item strong {
+  color: #27ae60;
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.education-item {
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-left: 3px solid #27ae60;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.edu-name {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.edu-dates {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.edu-location {
+  margin-right: 0.5rem;
+  font-style: italic;
+}
+
+.edu-field {
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* Experience Section */
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.job-item {
+  padding: 0.85rem;
+  border: 1px solid #e0e0e0;
+  background: #fafafa;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e0e0e0;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
-.history span{
-  margin-right: 10px;
-  text-align: left;
+.job-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
 }
-.history span.name{
-  font-weight: bold;
+
+.company-name {
+  font-size: 1.05rem;
+  color: #2c3e50;
+  font-weight: 600;
 }
-.history span.field, .history span.title{
-  text-align: center;
+
+.job-title {
+  font-size: 0.9rem;
+  color: #555;
   font-style: italic;
   text-transform: capitalize;
 }
 
-.history .summary{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.job .end-clients::after{
-  content: "\a ";
-  white-space: pre;
-}
-
-.job .details::after{
-  content: "\a ";
-  white-space: pre;
-}
-.history .summary .left{
-  align-self:flex-start;
-}
-.history .summary .right{
-  align-self:flex-end;
-}
-.history .summary span.dates{
-    text-align: right;
-}
-
-.history .summary span.dates::before{
-  content: ' ';
-  white-space: pre;
-}
-
-.history p {
-  margin:0;
-}
-
-.location:before {
-  content: "\00a0";
-}
-
-.allEducation{  
-  width:60%;
-  margin-left: -10%;
-  font-size: .7em;
-  margin-bottom: 10px;
-}
-
-.allJobs{
-  margin-left:5px;
-  font-size: 1em;
-  
-}
-
-.history .summary.job{
-  margin-bottom:10px;
-}
-.job:after {
-  content: "\00000a";
-}
-
-.history .summary.job .pg-break{
-  page-break-before: always;
-  break-before: always;
-}
-.history .summary.job .name{
-  font-size: 1.1em;
-  text-transform: capitalize;
-}
-
-
-.history .summary.job .details{
-  font-size: .9em;
-  width:100%;
-  
-}
-.history .summary.job .details p{
-  margin-top:5px;
-}
-.history .summary.job .details>ul{
-  padding-left:15px;
-  margin-top:5px;
-}
-.history .summary.job .details>ul li{
-  margin-bottom:5px;
-}
-
-.field, .title-terms{
-  width: 100%;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.job-meta {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-end;
+  gap: 0.2rem;
+  text-align: right;
 }
 
-.App-link {
-  color: #61dafb;
+.job-dates {
+  font-size: 0.88rem;
+  color: #666;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.job-location {
+  font-size: 0.82rem;
+  color: #888;
+}
+
+.end-clients {
+  background: #fff3cd;
+  padding: 0.4rem;
+  margin-bottom: 0.6rem;
+  border-left: 3px solid #ffc107;
+  font-size: 0.82rem;
+  color: #856404;
+  font-weight: 500;
+}
+
+.job-details {
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+
+.job-details ul {
+  margin: 0.4rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.job-details li {
+  margin-bottom: 0.4rem;
+  padding-left: 1.1rem;
+  position: relative;
+  color: #444;
+}
+
+.job-details li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.job-details strong {
+  color: #2c3e50;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 0.25in;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media print {
-  .App-header {
-    display: flex;
+  .resume-header .name {
+    font-size: 2rem;
+  }
+
+  .skills-section {
+    grid-template-columns: 1fr;
+  }
+
+  .job-header {
     flex-direction: column;
-    align-items: center;
-    font-size: calc(10px + 2vmin);
-    color: black;
+  }
+
+  .job-meta {
+    align-items: flex-start;
+    text-align: left;
   }
 }
+
+/* Print Styles */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .App {
+    max-width: 100%;
+    padding: 0.3in;
+    margin: 0;
+  }
+
+  /* Ensure colors print */
+  .resume-header {
+    border-bottom-color: #2c3e50 !important;
+  }
+
+  .skill-category {
+    border-left-color: #3498db !important;
+    background-color: #f8f9fa !important;
+  }
+
+  .education-item {
+    border-left-color: #27ae60 !important;
+    background-color: #f8f9fa !important;
+  }
+
+  .end-clients {
+    background-color: #fff3cd !important;
+    border-left-color: #ffc107 !important;
+  }
+
+  .job-item {
+    border-color: #e0e0e0 !important;
+    background-color: #fafafa !important;
+  }
+
+  /* Page breaks */
+  .section:has(.certification-list) {
+    page-break-before: always;
+    break-before: page;
+  }
+  
+  .certification-list {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
