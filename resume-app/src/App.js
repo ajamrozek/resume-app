@@ -1,6 +1,18 @@
 import './App.css';
 import React, { Component } from 'react';
-import { format } from 'date-fns'
+import { format } from 'date-fns';
+import productOwnerResume from './resume-product-owner.json';
+import sdetResume from './resume-sdet.json';
+import srManagerResume from './resume-sr-manager.json';
+import staffResume from './resume-staff.json';
+
+const resumesBySuffix = {
+  'product-owner': productOwnerResume,
+  sdet: sdetResume,
+  'sr-manager': srManagerResume,
+  'sr-mngr': srManagerResume,
+  staff: staffResume
+};
 
 class App extends Component {
 
@@ -94,7 +106,11 @@ class App extends Component {
   };
 
   GetResumeData = () => {
-    this.setState({ resumeData: require('./resume.json') });
+    const params = new URLSearchParams(window.location.search);
+    const suffix = params.get('resume') || Array.from(params.keys()).find(key =>
+      Object.prototype.hasOwnProperty.call(resumesBySuffix, key)
+    );
+    this.setState({ resumeData: resumesBySuffix[suffix] || srManagerResume });
   };
 
   render() {

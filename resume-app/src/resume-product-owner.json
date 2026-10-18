@@ -1,0 +1,222 @@
+{
+    "name": "Alex Jamrozek",
+    "title": "Technical Product Owner",
+    "summary": "Technical Product Owner with 25+ years bridging business strategy and engineering execution. Proven expertise in Agile product delivery, stakeholder buy-in, and large-scale backlog management. Track record of leading cross-functional teams, defining product roadmaps, and delivering customer-centric solutions through data-driven decision making and collaborative leadership.",
+    "skills": {
+        "Product Management & Delivery": [
+            "Product Roadmap Planning",
+            "Backlog Management & Prioritization",
+            "User Story Creation & Refinement",
+            "Stakeholder Engagement",
+            "Agile/Scrum Product Ownership",
+            "Release Planning & Management",
+            "Data-Driven Decision Making"
+        ],
+        "Technical Leadership": [
+            "Enterprise Architecture",
+            "API & Microservices Design",
+            "DevOps & CI/CD",
+            "Technical Debt Management",
+            "Requirements Analysis"
+        ],
+        "Collaboration & Communication": [
+            "Cross-functional Team Leadership",
+            "Technical Mentorship",
+            "Scrum Ceremonies Facilitation",
+            "Executive & Business Communication",
+            "Vendor & Partner Management"
+        ]
+    },
+    "certifications": [
+        {
+            "name": "Microsoft Certified: Azure Developer Associate",
+            "date": "December 2022"
+        },
+        {
+            "name": "Microsoft Certified: Azure Fundamentals",
+            "date": "November 2022"
+        }
+    ],
+    "education": [
+        {
+            "name": "University of Colorado",
+            "location": "Online",
+            "field": "Mathematics",
+            "start": "2017",
+            "end": "2018"
+        },
+        {
+            "name": "DeVry University",
+            "location": "Westminster, CO",
+            "field": "Computer Information Systems",
+            "start": "1999",
+            "end": "2003"
+        }
+    ],
+    "jobs": [
+        {
+            "clientName":"Charles Schwab",
+            "location":"Lone Tree, CO",
+            "start":"1/1/2025",
+            "end":null,
+            "title":"Senior Manager",
+            "terms":"Associate",
+            "details":[
+                "<strong>Product Ownership & Strategy</strong><ul>",
+                "<li>Partnered closely with Product Owner and Scrum Master to define and execute product roadmap, balancing strategic objectives with urgent business needs and maintaining delivery commitments</li>",
+                "<li>Led successful modernization of legacy in-production application, launching first clients live in under 9 months through iterative delivery approach and continuous stakeholder engagement</li>",
+                "<li>Defined and prioritized product and technical debt backlog items, ensuring alignment with business value, roadmap milestones, and industry compliance standards</li>",
+                "<li>Established comprehensive release management process using MS Planner, OneNote, Jira, and Confluence, improving release qualification consistency and reducing reactive issue resolution</li>",
+                "</ul>",
+                "<strong>Stakeholder Collaboration & Delivery</strong><ul>",
+                "<li>Managed competing priorities across stakeholder groups, successfully delivered consistent sprint commitments while maintaining quality standards</li>",
+                "<li>Established team working agreements and Scrum delivery practices, improving team velocity and predictability in resource-constrained environment</li>",
+                "<li>Facilitated backlog refinement and sprint planning sessions, translating business requirements into actionable user stories and technical tasks</li>",
+                "<li>Communicated product vision and technical trade-offs to business stakeholders, securing buy-in for modernization initiatives</li>",
+                "</ul>",
+                "<strong>Technical Leadership & Team Development</strong><ul>",
+                "<li>Enhanced API-driven product design by deconstructing monolithic schemas into atomic units, improving system flexibility and compliance reporting using Redocly</li>",
+                "<li>Led migration from BitBucket to GitHub, establishing modern CI/CD pipelines and improving deployment reliability across two mission-critical APIs</li>",
+                "<li>Mentored and onboarded team members across all experience levels, conducting code reviews and establishing quality standards</li>",
+                "<li>Partnered with enterprise team to establish Behavior-Driven-Design test framework using Cucumber, improving test coverage and documentation</li>",
+                "<li>Designed operational sequences and system flows using C4 templates in Mermaid, enhancing team understanding and onboarding efficiency</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Modis IT",
+            "endClients":["Charles Schwab"],
+            "location": "Remote",
+            "start": "6/6/2022",
+            "end": "12/31/2024",
+            "title": "Senior Developer",
+            "terms":"Contractor",
+            "details": [
+                "<ul>",
+                "<li>Advanced from contributor to technical lead, partnering with Product Owner on backlog prioritization and feature definition for Managed Account processing platform</li>",
+                "<li>Established testing strategy and framework using Zephyr, improving quality metrics and delivery predictability</li>",
+                "<li>Delivered Provider Aggregation Engine enabling low-code data integration for 15+ BI dashboards, reducing technical barriers for business analysts through intuitive HTTP/SQL configuration</li>",
+                "<li>Facilitated Scrum ceremonies including backlog refinement, sprint planning, and retrospectives, ensuring team alignment and continuous improvement</li>",
+                "<li>Managed application upgrade roadmap from .NET Core 3.1 to .NET 6, coordinating with stakeholders on timing and risk mitigation</li>",
+                "<li>Mentored developers on technical practices and authored comprehensive documentation on Confluence, improving knowledge sharing</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Modis IT",
+            "endClients":["Charles Schwab"],
+            "location": "Remote",
+            "start": "11/1/2021",
+            "end": "6/3/2022",
+            "title": "Senior Developer",
+            "terms": "Part-Time Contractor",
+            "details": [
+                "<ul>",
+                "<li>Defined and managed MVP backlog for custom release management utility in collaboration with cross-functional stakeholder group</li>",
+                "<li>Applied Kanban methodology for backlog prioritization in Jira, optimizing throughput and minimizing work-in-progress</li>",
+                "<li>Delivered integrated solution with Jira APIs, hosted on VMWare Tanzu, improving release tracking efficiency for multiple teams</li>",
+                "<li>Mentored junior engineer through daily working sessions, establishing feedback loops and accelerating skill development</li>",
+                "</ul>"                
+            ]
+        },
+        {
+            "clientName": "Nexient",            
+            "endClients":["Alaska Airlines, First Republic Bank"],
+            "location": "Remote",
+            "start": "7/6/2021",
+            "end": "5/27/2022",
+            "title": "Senior Manager",
+            "terms": "Consultant",
+            "details": [
+                "<ul>",
+                "<li>Enhanced airline discount management software, collaborating with product stakeholders to define feature requirements and acceptance criteria</li>",
+                "<li>Managed work items in Jira and maintained product documentation in Confluence, ensuring transparency and traceability</li>",
+                "<li>Developed and supported .NET Core 3.1 APIs and Azure cloud services, leveraging technical depth to guide architectural decisions</li>",
+                "<li>Implemented DevOps workflows using GitHub and Jenkins, improving deployment frequency and reliability</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Key Software Systems",
+            "location": "Remote",
+            "start": "3/1/2021",
+            "end": "6/30/2021",
+            "title": "Full-Stack Developer",
+            "terms": "Independent",
+            "details": [
+                "<ul>",
+                "<li>Delivered chat component for shipping and logistics software, gathering requirements and defining acceptance criteria with business stakeholders</li>",
+                "<li>Introduced modern development practices including Unit Testing and dependency injection, reducing technical debt and improving maintainability</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Modis IT",
+            "endClients":["Charles Schwab"],
+            "location": "Denver, CO",
+            "start": "8/1/2019",
+            "end": "2/28/2021",
+            "title": "sr developer",
+            "terms": "contractor",
+            "details": [
+                "<ul>",
+                "<li>Led modernization initiative for ASP.NET 4.5.2 application to .NET Core 3.1, building business case and managing stakeholder expectations throughout multi-phase delivery</li>",
+                "<li>Championed code quality initiatives as Unit Test and SonarQube champion, establishing quality gates and metrics-driven improvements</li>",
+                "<li>Developed REST APIs and microservices using ASP.NET Core, working with stakeholders to define API contracts and service boundaries</li>",
+                "<li>Automated release documentation with custom AngularJS tooling, reducing manual effort by 75% and improving reporting accuracy for compliance</li>",
+                "<li>Mentored team on C# and SOA best practices, improving code quality and team velocity through knowledge transfer</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Infosys",
+            "endClients":["CenturyLink"],
+            "location": "Palo Alto, CA; Littleton, CO",
+            "start": "1/2/2019",
+            "end": "7/31/2019",
+            "title": "Principal",
+            "terms": "Consultant",
+            "details": [
+                "<ul>",
+                "<li>Designed and implemented CI/CD pipelines for telecommunications supply chain software, enabling faster time-to-market and improved deployment reliability</li>",
+                "<li>Established operational monitoring using Splunk, providing visibility into system health and user experience metrics</li>",
+                "<li>Developed microservices using .NET Core 2.2 and Angular 7, collaborating with stakeholders on feature requirements</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "TransUnion",
+            "location": "Greenwood Village, CO",
+            "start": "8/1/2012",
+            "end": "12/31/2018",
+            "title": "Technical Lead / Architect",
+            "terms": "Associate",
+            "details": [
+                "<ul>",
+                "<li>Coached organization's first Scrum team as technical lead, delivering call center application in 9 months that achieved 3.5-minute call time reduction, demonstrating tangible business value</li>",
+                "<li>Designed and prioritized technical roadmap for distributed N-tier architecture across multiple products, balancing innovation with risk management</li>",
+                "<li>Led security compliance initiatives including Veracode/CWE remediation, working with security and compliance teams to prioritize and resolve vulnerabilities</li>",
+                "<li>Pioneered organization's adoption of modern web frameworks (ASP.NET MVC, Knockout.js, Entity Framework), building business case and managing change adoption</li>",
+                "<li>Championed code quality initiatives with SonarQube/SonarLint, establishing quality metrics and driving continuous improvement</li>",
+                "<li>Managed development teams and consultants, facilitated architecture focus group, and mentored developers across organization</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Earlier Career Experience (2000-2012)",
+            "location": "Colorado",
+            "start": "1/1/2000",
+            "end": "12/31/2012",
+            "title": "Software Developer & Technical Lead",
+            "terms": "Various",
+            "details": [
+                "<ul>",
+                "<li><strong>Randstad Technologies (DataCard)</strong>: Architected JavaScript framework and mentored team on web design patterns</li>",
+                "<li><strong>metrolist inc</strong>: Led engineering team of 6-8 developers, collaborating with business and IT stakeholders</li>",
+                "<li><strong>EchoStar</strong>: Lead Developer coordinating offshore delivery and mentoring development team</li>",
+                "<li><strong>Earlier roles</strong>: Software development and consulting across financial services, telecommunications, and healthcare sectors</li>",
+                "</ul>"
+            ]
+        }
+    ]
+}

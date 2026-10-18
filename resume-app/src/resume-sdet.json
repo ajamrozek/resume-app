@@ -1,0 +1,204 @@
+{
+    "name": "Alex Jamrozek",
+    "title": "Senior Software Engineer in Test | Backend & Automation",
+    "summary": "Software engineer with 25+ years of experience building and supporting enterprise applications, with hands-on experience in automated testing, backend APIs, and service-based systems. Collaborated on Cucumber BDD and end-to-end integration tests, established test practices with Zephyr, and championed unit testing and code quality. Brings strong Java, C#, .NET, SQL, and CI/CD experience to improving software quality across distributed, cloud-hosted environments.",
+    "skills": {
+        "Test Engineering": [
+            "Cucumber BDD Testing (Smoke, Regression, End-to-End)",
+            "Mocked Integration Testing",
+            "Unit Testing",
+            "Zephyr Test Management",
+            "Test Planning & Release Qualification/Certification"
+        ],
+        "Backend & Data": [
+            "Java / Spring",
+            "C# / .NET Core / ASP.NET Core",
+            "REST APIs & Microservices",
+            "SQL Server / JPA / Hibernate",
+            "Asynchronous Processing / RabbitMQ"
+        ],
+        "Delivery & Collaboration": [
+            "CI/CD Pipelines",
+            "GitHub / Jenkins / Azure DevOps",
+            "Cloud-hosted Services / Kubernetes",
+            "Splunk Monitoring",
+            "Code Reviews / Mentorship / Scrum"
+        ]
+    },
+    "certifications": [
+        {
+            "name": "Microsoft Certified: Azure Developer Associate",
+            "date": "December 2022"
+        },
+        {
+            "name": "Microsoft Certified: Azure Fundamentals",
+            "date": "November 2022"
+        }
+    ],
+    "education": [
+        {
+            "name": "University of Colorado",
+            "location": "Online",
+            "field": "Mathematics",
+            "start": "2017",
+            "end": "2018"
+        },
+        {
+            "name": "DeVry University",
+            "location": "Westminster, CO",
+            "field": "Computer Information Systems",
+            "start": "1999",
+            "end": "2003"
+        }
+    ],
+    "jobs": [
+        {
+            "clientName": "Charles Schwab",
+            "location": "Lone Tree, CO",
+            "start": "1/1/2025",
+            "end": null,
+            "title": "Senior Manager",
+            "terms": "Associate",
+            "details": [
+                "<strong>Leadership & Delivery</strong><ul>",
+                "<li>Transitioned from professional services consultant to lead associate developer, establishing team working agreements and Scrum delivery practices for a resource-constrained team</li>",
+                "<li>Implemented production release management using MS Planner, OneNote, Jira, and Confluence, maintaining release qualification and reducing reactive procedures</li>",
+                "<li>Managed competing priorities with the Product Owner and Scrum Master, balancing roadmap commitments, technical debt, and urgent deliverables</li>",
+                "<li>Conducted code reviews for quality and architectural standards, and onboarded team members from entry-level to senior experience</li>",
+                "</ul>",
+                "<strong>Architecture & Modernization</strong><ul>",
+                "<li>Led iterative modernization of a legacy production application, launching the first clients in under 9 months</li>",
+                "<li>Deconstructed monolithic API schemas into atomic units with Redocly for compliance submissions</li>",
+                "<li>Designed operational sequences and flows using C4 templates in Mermaid</li>",
+                "</ul>",
+                "<strong>Development & Test Automation</strong><ul>",
+                "<li>Designed and implemented Java 17/Spring services using CQRS and SOLID principles</li>",
+                "<li>Executed migration from Bitbucket to GitHub for source control and CI/CD pipelines across two APIs</li>",
+                "<li>Collaborated with the test automation services team to define Cucumber BDD coverage for integration workflows and integrate test execution into CI/CD</li>",
+                "<li>Extended validation beyond functional end-to-end scenarios with smoke testing and mocked provider integration testing for Schwab workflows</li>",
+                "<li>Established mocked provider integration tests and end-to-end Cucumber tests, plus utility applications supporting test execution</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Modis IT",
+            "endClients": ["Charles Schwab"],
+            "location": "Remote",
+            "start": "6/6/2022",
+            "end": "12/31/2024",
+            "title": "Senior Developer",
+            "terms": "Contractor",
+            "details": [
+                "<ul>",
+                "<li>Established a testing framework using Zephyr to support consistent test coordination and delivery continuity</li>",
+                "<li>Developed APIs and batch automation for managed-account processing using Java, Spring, JPA Hibernate, SQL Server, PowerShell, and Python on VMware Tanzu (PCF)</li>",
+                "<li>Built a provider aggregation engine for HTTP/SQL data handling and BI dashboards, using asynchronous processing and performance optimization</li>",
+                "<li>Mentored developers, facilitated Scrum ceremonies, and documented technical processes</li>",
+                "<li>Upgraded applications from .NET Core 3.1 to .NET 6 and implemented release-management improvements</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Modis IT",
+            "endClients": ["Charles Schwab"],
+            "location": "Denver, CO",
+            "start": "8/1/2019",
+            "end": "2/28/2021",
+            "title": "Senior Developer",
+            "terms": "Contractor",
+            "details": [
+                "<ul>",
+                "<li>Modernized an ASP.NET 4.5.2 application to .NET Core 3.1 on Pivotal Cloud Foundry, refactoring procedural code toward domain-driven design and async/await patterns</li>",
+                "<li>Developed REST APIs and microservices using ASP.NET Core 2.1, RabbitMQ, and enterprise SSO authentication</li>",
+                "<li>Championed unit testing and SonarQube code-quality practices, mentoring teammates on C# and SOA</li>",
+                "<li>Implemented DevOps practices with Bitbucket, Bamboo, Jira, PowerShell, and Pivotal Cloud Foundry</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Nexient",
+            "endClients": ["Alaska Airlines", "First Republic Bank"],
+            "location": "Remote",
+            "start": "7/6/2021",
+            "end": "5/27/2022",
+            "title": "Senior Manager",
+            "terms": "Consultant",
+            "details": [
+                "<ul>",
+                "<li>Developed and supported .NET Core 3.1 APIs hosted in OpenShift Kubernetes containers</li>",
+                "<li>Implemented delivery workflows with Visual Studio, GitHub, and Jenkins, using Splunk for operational monitoring</li>",
+                "<li>Enhanced airline discount management software using Azure services and Angular</li>",
+                "<li>Managed work items in Jira and maintained technical documentation in Confluence</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Infosys",
+            "endClients": ["CenturyLink"],
+            "location": "Palo Alto, CA; Littleton, CO",
+            "start": "1/2/2019",
+            "end": "7/31/2019",
+            "title": "Principal",
+            "terms": "Consultant",
+            "details": [
+                "<ul>",
+                "<li>Designed CI/CD pipelines for telecommunications supply-chain software using GitLab, Jenkins, Docker, and Kubernetes</li>",
+                "<li>Established operational monitoring using ASP middleware and Splunk</li>",
+                "<li>Developed .NET Core 2.2 microservices and Angular 7 applications on CentOS</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "TransUnion",
+            "location": "Greenwood Village, CO",
+            "start": "8/1/2012",
+            "end": "12/31/2018",
+            "title": "Technical Lead / Architect",
+            "terms": "Associate",
+            "details": [
+                "<ul>",
+                "<li>Designed distributed N-tier architecture across multiple products and implemented an enterprise service bus to stabilize service-oriented systems</li>",
+                "<li>Managed mission-critical applications using Angular, .NET, SQL Server, and Windows services while leading security remediation initiatives</li>",
+                "<li>Championed code quality with SonarQube/SonarLint and improved delivery reliability through build automation</li>",
+                "<li>Managed development teams and consultants, mentored developers, and chaired a divisional architecture focus group</li>",
+                "<li>Coached the organization's first Scrum team, delivering a call-center application in 9 months and reducing call time by 3.5 minutes</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Key Software Systems",
+            "location": "Remote",
+            "start": "3/1/2021",
+            "end": "6/30/2021",
+            "title": "Full-Stack Developer",
+            "terms": "Independent",
+            "details": [
+                "<ul>",
+                "<li>Developed a chat component for shipping and logistics software using Twilio, SQL Server, ASP.NET MVC (.NET 4.8), Kendo MVVM, and Azure DevOps</li>",
+                "<li>Introduced unit testing, Dapper ORM, resource-file management, and AutoMapper</li>",
+                "</ul>"
+            ]
+        },
+        {
+            "clientName": "Earlier Career Experience (2000-2012)",
+            "location": "Colorado",
+            "start": "1/1/2000",
+            "end": "7/31/2012",
+            "title": "Software Developer & Consultant",
+            "terms": "Various",
+            "details": [
+                "<ul>",
+                "<li><strong>iBeta (Associate; Aurora, CO) - Beta Test & Web Developer:</strong> Created test plans and executed manual tests for games. Contributed to web development using ColdFusion and HTML</li>",
+                "<li><strong>The JobStore (Contractor):</strong> Performed data analysis using MS Access and VBA</li>",
+                "<li><strong>Equus Software (Independent):</strong> Developed applications using .NET (VB) and SQL Server</li>",
+                "<li><strong>Qwest Communications (Independent):</strong> Supported systems migration using SQL Server and .NET</li>",
+                "<li><strong>Avanade (Consultant):</strong> Delivered multi-client consulting across .NET, WCF, JavaScript, CSS, and Ruby</li>",
+                "<li><strong>EchoStar (Lead Developer):</strong> Mentored developers and coordinated offshore delivery using .NET, C#, and WCF</li>",
+                "<li><strong>National CineMedia (Associate):</strong> Developed .NET applications using C#, AJAX, Silverlight, and OLAP</li>",
+                "<li><strong>Alcohol Monitoring Systems (Associate):</strong> Built software with .NET, C#, SQL Server, and WPF in an Agile/TFS environment</li>",
+                "<li><strong>Prodigy Resources (Contract; Ascend Clinical):</strong> Developed with .NET, C#, Silverlight, and Prism MVVM</li>",
+                "</ul>"
+            ]
+        }
+    ]
+}
