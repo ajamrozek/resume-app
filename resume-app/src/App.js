@@ -5,13 +5,15 @@ import productOwnerResume from './resume-product-owner.json';
 import sdetResume from './resume-sdet.json';
 import srManagerResume from './resume-sr-manager.json';
 import staffResume from './resume-staff.json';
+import engineeringDirectorResume from './resume-director.json';
 
 const resumesBySuffix = {
   'product-owner': productOwnerResume,
   sdet: sdetResume,
   'sr-manager': srManagerResume,
   'sr-mngr': srManagerResume,
-  staff: staffResume
+  staff: staffResume,
+  'engineering-director': engineeringDirectorResume
 };
 
 class App extends Component {
