@@ -10,6 +10,8 @@ test.each([
   ['staff', 'Staff Software Engineer'],
   ['sr-mngr', 'Senior Manager, Back End Engineering'],
   ['sdet', 'Senior Software Engineer in Test | Backend & Automation'],
+  ['resume=senior-software-engineering-department-manager', 'Senior Software Engineering Department Manager'],
+  ['resume=architect', 'Software Architect | Enterprise Applications'],
   ['resume=staff', 'Staff Software Engineer']
 ])('renders the %s resume', (query, title) => {
   renderResume(query);

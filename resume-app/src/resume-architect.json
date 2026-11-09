@@ -1,0 +1,200 @@
+{
+  "name": "Alex Jamrozek",
+  "title": "Software Architect | Enterprise Applications",
+  "summary": "Software architect and engineering leader with 25+ years designing, building, and modernizing enterprise applications. Experienced in distributed systems, API design, SOA, cloud platforms, and software delivery. Hands-on experience in OOP languages, web client UX scripting, and functional DevOps scripting. Combines technical leadership and cross-functional partnership with a focus on secure engineering, automated testing, and production readiness.",
+  "skills": {
+    "Architecture": [
+      "Enterprise & Distributed Systems",
+      "SOA, Microservices & APIs",
+      "Modernization, DDD & CQRS",
+      "System Integration & Data Modeling"
+    ],
+    "Development": [
+      "Java / Spring",
+      "C# / .NET",
+      "SQL Server",
+      "CI/CD & Automated Testing"
+    ],
+    "Quality & Leadership": [
+      "Secure Coding & Code Quality",
+      "Cloud: Azure, Tanzu & Kubernetes",
+      "Monitoring & Production Readiness",
+      "Technical Leadership & Mentorship"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "Microsoft Certified: Azure Developer Associate",
+      "date": "December 2022"
+    },
+    {
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "date": "November 2022"
+    }
+  ],
+  "education": [
+    {
+      "name": "University of Colorado",
+      "location": "Online",
+      "field": "Mathematics",
+      "start": "2017",
+      "end": "2018"
+    },
+    {
+      "name": "DeVry University",
+      "location": "Westminster, CO",
+      "field": "Computer Information Systems",
+      "start": "1999",
+      "end": "2003"
+    }
+  ],
+  "jobs": [
+    {
+      "clientName": "Charles Schwab",
+      "location": "Lone Tree, CO",
+      "start": "1/1/2025",
+      "end": null,
+      "title": "Senior Manager",
+      "terms": "Associate",
+      "details": [
+        "<strong>Architecture & Modernization</strong><ul>",
+        "<li>Led iterative modernization of a legacy production application, launching the first clients in under 9 months</li>",
+        "<li>Designed Java 17/Spring services using CQRS, SOLID principles, and API-first integration patterns</li>",
+        "<li>Improved API-driven design by decomposing monolithic schemas into atomic units and using Redocly for compliance submissions</li>",
+        "<li>Documented operational sequences and service flows using C4 templates in Mermaid</li>",
+        "</ul>",
+        "<strong>Engineering Quality & Delivery</strong><ul>",
+        "<li>Partnered with test automation teams to define BDD coverage for complex integration workflows and incorporate test execution into CI/CD</li>",
+        "<li>Established mocked integration and end-to-end Cucumber tests and migrated two APIs from Bitbucket to GitHub with CI/CD pipelines</li>",
+        "<li>Conducted code reviews and provided guidance on architecture, quality, and production release practices</li>",
+        "<li>Used GitHub Copilot with instruction files and MCP integrations while developing test and utility applications</li>",
+        "</ul>"
+      ]
+    },
+    {
+      "clientName": "Modis IT",
+      "endClients": [
+        "Charles Schwab"
+      ],
+      "location": "Remote",
+      "start": "6/6/2022",
+      "end": "12/31/2024",
+      "title": "Senior Developer",
+      "terms": "Contractor",
+      "details": [
+        "<ul>",
+        "<li>Designed and delivered APIs and batch automation for managed-account processing with Java, Spring, JPA/Hibernate, SQL Server, PowerShell, and VMware Tanzu</li>",
+        "<li>Built a Provider Aggregation Engine for configurable HTTP/SQL data handling and BI dashboards, using asynchronous processing</li>",
+        "<li>Advanced from contributor to technical lead, establishing a Zephyr testing framework and supporting delivery across distributed teams</li>",
+        "<li>Mentored developers, facilitated Scrum ceremonies, and documented technical practices in Confluence</li>",
+        "<li>Upgraded applications from .NET Core 3.1 to .NET 6 and improved release management and production readiness</li>",
+        "</ul>"
+      ]
+    },
+    {
+      "clientName": "Nexient",
+      "endClients": [
+        "Alaska Airlines",
+        "First Republic Bank"
+      ],
+      "location": "Remote",
+      "start": "7/6/2021",
+      "end": "5/27/2022",
+      "title": "Senior Manager",
+      "terms": "Consultant",
+      "details": [
+        "<ul>",
+        "<li>Enhanced an airline discount-management platform using Azure services, GitHub, and Angular</li>",
+        "<li>Developed and supported .NET Core APIs hosted in OpenShift Kubernetes containers</li>",
+        "<li>Implemented delivery workflows using GitHub and Jenkins, with Splunk for operational monitoring</li>",
+        "<li>Partnered with client and engineering stakeholders to coordinate priorities for a distributed team</li>",
+        "</ul>"
+      ]
+    },
+    {
+      "clientName": "Modis IT",
+      "endClients": [
+        "Charles Schwab"
+      ],
+      "location": "Denver, CO",
+      "start": "8/1/2019",
+      "end": "2/28/2021",
+      "title": "Senior Developer",
+      "terms": "Contractor",
+      "details": [
+        "<ul>",
+        "<li>Modernized an ASP.NET application to .NET Core 3.1 on Pivotal Cloud Foundry, applying domain-driven design and asynchronous programming patterns</li>",
+        "<li>Developed REST APIs and microservices using ASP.NET Core, RabbitMQ, and enterprise single sign-on</li>",
+        "<li>Championed unit testing and SonarQube quality practices and mentored teammates on C# and service-oriented architecture</li>",
+        "<li>Implemented delivery practices with Bitbucket, Bamboo, Jira, PowerShell, and Pivotal Cloud Foundry</li>",
+        "</ul>"
+      ]
+    },
+    {
+      "clientName": "Infosys",
+      "endClients": [
+        "CenturyLink"
+      ],
+      "location": "Palo Alto, CA; Littleton, CO",
+      "start": "1/2/2019",
+      "end": "7/31/2019",
+      "title": "Principal",
+      "terms": "Consultant",
+      "details": [
+        "<ul>",
+        "<li>Designed CI/CD pipelines for telecommunications supply-chain software using GitLab, Jenkins, Docker, and Kubernetes</li>",
+        "<li>Established operational monitoring with ASP.NET middleware and Splunk</li>",
+        "<li>Developed .NET Core microservices and Angular applications</li>",
+        "</ul>"
+      ]
+    },
+    {
+      "clientName": "TransUnion",
+      "location": "Greenwood Village, CO",
+      "start": "8/1/2012",
+      "end": "12/31/2018",
+      "title": "Technical Lead / Architect",
+      "terms": "Associate",
+      "details": [
+        "<ul>",
+        "<li>Designed distributed N-tier architectures across multiple products and implemented an enterprise service bus to stabilize service-oriented systems</li>",
+        "<li>Led security initiatives, including Veracode/CWE remediation</li>",
+        "<li>Managed mission-critical applications using Angular, .NET, SQL Server, and Windows services</li>",
+        "<li>Introduced dependency injection and pioneered the organization's first ASP.NET MVC/Knockout.js/Entity Framework application</li>",
+        "<li>Championed code quality with SonarQube/SonarLint and improved delivery reliability through build automation</li>",
+        "<li>Managed development teams and consultants, mentored developers, and chaired a divisional architecture focus group</li>",
+        "<li>Coached the organization's first Scrum team, delivering a call-center application in 9 months and reducing call time by 3.5 minutes</li>",
+        "</ul>"
+      ]
+    },
+    {
+      "clientName": "metrolist inc",
+      "location": "Greenwood Village, CO",
+      "start": "7/1/2011",
+      "end": "12/31/2011",
+      "title": "Engineering Lead",
+      "terms": "Associate",
+      "details": [
+        "<ul>",
+        "<li>Managed a team of 6-8 developers and conducted hiring</li>",
+        "<li>Implemented application lifecycle management for SQL Server database objects and developed a public subscription website with SSIS ETL processes</li>",
+        "</ul>"
+      ]
+    },
+    {
+      "clientName": "Earlier Career Experience",
+      "location": "Colorado",
+      "start": "1/1/2000",
+      "end": "6/30/2011",
+      "title": "Software Developer & Consultant",
+      "terms": "Various",
+      "details": [
+        "<ul>",
+        "<li><strong>EchoStar (Lead Developer):</strong> Mentored developers and coordinated offshore delivery using .NET, C#, and WCF</li>",
+        "<li><strong>Avanade (Consultant):</strong> Delivered multi-client development and systems integration</li>",
+        "<li><strong>National CineMedia, Alcohol Monitoring Systems, Prodigy Resources, and other clients:</strong> Built software across .NET/C#, SQL Server, WPF, Silverlight, and web technologies</li>",
+        "</ul>"
+      ]
+    }
+  ]
+}

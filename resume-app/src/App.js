@@ -4,16 +4,24 @@ import { format } from 'date-fns';
 import productOwnerResume from './resume-product-owner.json';
 import sdetResume from './resume-sdet.json';
 import srManagerResume from './resume-sr-manager.json';
+import seniorEngineeringManagerResume from './resume-sr-eng-manager.json';
 import staffResume from './resume-staff.json';
 import engineeringDirectorResume from './resume-director.json';
+import directorSoftwareEngineeringResume from './resume-director-sw-engineering.json';
+import seniorSoftwareEngineeringDepartmentManagerResume from './resume-senior-software-engineering-department-manager.json';
+import architectResume from './resume-architect.json';
 
 const resumesBySuffix = {
   'product-owner': productOwnerResume,
   sdet: sdetResume,
   'sr-manager': srManagerResume,
   'sr-mngr': srManagerResume,
+  'sr-eng-mngr': seniorEngineeringManagerResume,
   staff: staffResume,
-  'engineering-director': engineeringDirectorResume
+  'engineering-director': engineeringDirectorResume,
+  'director-sw-engineering': directorSoftwareEngineeringResume,
+  'senior-software-engineering-department-manager': seniorSoftwareEngineeringDepartmentManagerResume,
+  architect: architectResume
 };
 
 class App extends Component {

@@ -1,0 +1,14 @@
+Dear Hiring Team,
+
+I am writing to apply for the Software Architect opportunity at Oracle. With more than 25 years in software engineering, architecture, and technical leadership, I have helped teams design and modernize enterprise applications, improve API and service integration, and strengthen the practices that support maintainable, production-ready software.
+
+My experience aligns closely with the role's focus on architecture and engineering quality. At TransUnion, I designed distributed N-tier architectures across multiple products, implemented an enterprise service bus to stabilize service-oriented systems, and led security remediation and code-quality initiatives. I also chaired a divisional architecture focus group, managed development teams and consultants, and coached the organization's first Scrum team. That team delivered a call-center application in nine months and reduced call time by 3.5 minutes.
+
+In recent work at Charles Schwab, I have led iterative modernization of a legacy application, designed Java/Spring services using CQRS and SOLID principles, and improved API schemas by decomposing monolithic structures into smaller units. I partnered with test automation teams to establish BDD coverage for complex integration workflows, created mocked integration and end-to-end Cucumber tests, and helped migrate two APIs to GitHub with CI/CD pipelines. Earlier, I modernized ASP.NET applications to .NET Core, developed REST APIs and microservices, and championed unit testing, SonarQube, and production monitoring.
+
+I bring a collaborative, hands-on approach to architecture: clarify the problem with stakeholders, make trade-offs and design intent understandable, and help teams apply sound practices through implementation, testing, and operations. My background is primarily in Java and Microsoft technologies, including .NET, Azure, and SQL Server; I would bring that foundation and my experience with distributed application design to Oracle's software organization.
+
+Thank you for your consideration. I would welcome the opportunity to discuss how my architecture and engineering leadership experience could contribute to Oracle.
+
+Sincerely,  
+Alex Jamrozek
